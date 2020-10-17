@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="文本标签">文本标签</h2>
+    <!-- 举例开始 -->
+    我是<strong>加粗</strong>的文字<br />
+    我也是<b>加粗</b>的文字<br />
+    我是<em>倾斜</em>的文字<br />
+    我也是<i>倾斜</i>的文字<br />
+    我是<del>删除线</del><br />
+    我也是<s>删除线</s><br />
+    我是<ins>下划线</ins><br />
+    我也是<u>下划线</u><br />
+    <!-- 举例结束 -->
+    <!-- 说明文字开始 -->
+<p>
+     关于文本格式化标签，建议优先使用较复杂的标签，以防止遗忘。<br />
+     但相应的，缩写也不可荒废
+</p>
+<p>
+     再来练习一遍
+</p>
+<!-- 加粗部分 -->
+<p>
+     加粗的文字标签有<strong>(strong)(strong)</strong>，缩写有<b>(b)(b)</b>,关于二者区别，可见下面复制的回答:<br />
+     b这个标签对应bold，即文本加粗，其目的仅仅是为了加粗显示文本，是一种样式／风格需求；（类似的，在word文档中加粗的快捷键为CTRL+B）<br />
+     strong这个标签意思是加强，表示该文本比较重要，提醒读者or终端注意。为了达到这个目的，浏览器等终端将其加粗显示；<br />
+     总结：b为了加粗而加粗，strong为了标明重点而加粗。</p>
+<!-- 倾斜部分 -->
+<p>
+     倾斜的标签有<em><b>em</b></em>和<b><i>i</i></b>,区别见下<br />
+     i标签：<br />
+     显示斜体文本效果<br />
+     标签告诉浏览器将包含其中的文本以<i>斜体字（italic）</i>或者<i>倾斜（oblique）</i>字体显示；<br />
+     em标签：<br />
+     标签中的文本表示为强调的内容，对于所有浏览器的显示效果来说，是把这段文字用斜体来显示；当引入新的术语或在引用特定类型的术语或概念时作为固定样式的时候，也可以考虑使用标签。
+</p>
+<!-- 删除线部分 -->
+<p>
+     表示删除线的标签有<del>del</del>以及<s>s</s>标签。同样的，二者显示的形式相同但在网页编译中有着不同的含义。具体来说，<del>del</del>代表了文本强调，其本身也是delete的缩写。而<s>s</s>只是单纯地表示样式。
+</p>
+<!-- 下划线部分，但由标签来看其实应为插入部分 -->
+<p>
+     ins与u标签同理类比即可。在此只简单强调ins为insert之缩写
+</p>
+<p>————————————————<a href="#锚点链接">点此</a>返回超链接部分</p>
+<!-- 文本标签说明结束，开始盒子标签部分 -->
+<div>div是一个大盒子，<b>单独占一行</b></div>
+<div>div是一个大盒子，<b>单独占一行</b></div>写在div同一行的还可以强制换行<br />
+<span>span是个小盒子，可以<strength>排在同一行</strength></span>
+<span>span是个小盒子，可以<strength>排在同一行</strength></span>
+<span>span是个小盒子，可以<strength>排在同一行</strength></span>
+<!-- 图像标签部分开始 -->
+<h2>图像标签</h2>
+     <img src="vscode图标.png"/>
+<h3>替换文本(alternative,图片显示不出来的时候用文字替换)实例</h3>
+     <img src="vscode图标1.png" alt="没给美工费"/>
+<h3>title标签使用实例</h3>
+     <img src="vscode图标.png"  title="程序员最常用的编程软件"/>
+<h3>尺寸标签 width与height</h3>
+     <img src="vscode图标.png"  width="500" height="100"/>
+<h3>尺寸标签 w与h取一，图片自动缩放</h3>
+     <img src="vscode图标.png"  height="100"/><br />
+     <img src="vscode图标.png" width="500" />
+<h3>border标签失灵</h3>
+     <img src="vscode图标.png" width="500" border="10"/>
+<!-- 超链接部分开始 -->
+<!-- 此部分在一定程度上可认为实现了网页与人的交互，虽然是预设的程序但范围大大扩展 -->
+<h2>超链接标签a（anchor之缩写）</h2>
+<h3>外部链接</h3>
+     <a href="https://en.wikipedia.org/wiki/Wiki" target="_blank">What is Wiki?</a>在html页面这段文字紧接在<a href="https://en.wikipedia.org/wiki/Hyperlink" target="_blank">超链接标签</a>后，由此可见超链接标签不具有换行功能。这也是在段落中实现跳转的保证。
+     <p>在上面的超链接标签中，包括的标签名有a（标签类型）、href（链接地址）、target（打开方式_self _blank），内层属性标签之间没有先后关系，用空格隔开即可</p>
+<!-- 外部链接是最容易理解也最容易使用的标签，基本操作依赖Ctrl+C以及Ctrl+V -->
+<h3>内部链接</h3>
+     <a href="03-vscode创建页面.html">用vscode建立的第一个文件</a>
+     <p>内部链接转向的是制作网页的电脑的内部文件，这样的超链接只有能访问这台电脑时才能起到作用。</p>
+<!-- 内部链接使用较少 -->
+<h3>空链接</h3>
+     <a href=" ">我的第一份简历</a>
+     <p>在这个链接中因为href后接的是空格，因而点击后不会转向任何一个新的文件。这也提醒了我有很多东西得赶紧学会</p>
+<!-- 空连接似起到缓冲的作用，具体开发缘由需要进一步查看 -->
+<h3>下载链接</h3>
+     <p>这样的链接转向的是一个文件或压缩包(.exe或者.zip)，不会跳转而是直接下载</p>
+<!-- 下载链接由于可视化程度不高，可能会成为误触而造成信息泄露的原因。因此对于任何来路不明的下载链接都不要轻易打开 -->
+<h3>网页元素链接</h3>
+<p>将网页元素直接当作文字处理即可，无需其他规则</p>
+     eg.<a href="https://en.wikipedia.org/wiki/Visual_Studio_Code"> <img src="vscode图标.png"/></a>
+<!-- 网页链接其实并不是一类特殊的超链接，只是突破了初学者的固有印象 -->
+<h3 id="锚点链接">锚点链接（利用超链接构建书签）</h3>
+    可以快速定位到页面中的某个位置<br />
+    eg.<a href="#文本标签">点此</a>进入文本标签复习</p>
+<!-- 锚点链接是需要额外注意的标签，以往标签都有明确的目的性，因而一步即可到位，但锚点链接除了需要自己设定链接地址（发出方），还需要建设目标（收入方）。同时id标签和#符号也是经常被忽略的地方 -->
+<!-- 超链接部分到此结束 -->
+<h2>注释与特殊字符</h2>
+<h3>注释</h3>
+<p>被注释标签框起来的部分仅仅在源代码部分展示出来，不会在网页中被执行，因而是很好的程序员之间交流的方法。在以后的学习过程中保持随手加注释以提示自己，让源代码页面更加有序也是一个很好的习惯。注释的快捷键为“Ctrl+/”</p>
+<h3>特殊标签</h3>
+<p>在HTML文件中，很多特殊符号都在标签中有自己特定的作用。为了在网页中能够显示出这些特殊符号，人们采用了&、字母和；表达特殊符号的方法。</p>
+<p>下表列出了常用的特殊字符与对应代码</p>
+<table>
+     <tr>
+          <td>特殊字符</td>
+          <td>描述</td>
+          <td>字符代码</td>
+     </tr>
+     <tr>
+          <td>&nbsp;</td>
+          <td>空格符</td>
+          <td>&&nbsp;n&nbsp;b&nbsp;s&nbsp;p&nbsp;；</td>
+     </tr>
+     <tr>
+          <td>&lt;</td>
+          <td>小于号</td>
+          <td>&&nbsp;l&nbsp;t&nbsp;；<td>
+     </tr>
+     <tr>
+          <td>&gt;</td>
+          <td>大于号</td>
+          <td>&&nbsp;g&nbsp;t&nbsp;；</td>
+     </tr>
+     <tr>
+          <td>&amp;</td>
+          <td>和号</td>
+          <td>&&nbsp;a&nbsp;m&nbsp;p&nbsp;；</td>
+     </tr>
+     <tr>
+          <td>&yen;</td>
+          <td>人民币</td>
+          <td>&&nbsp;y&nbsp;e&nbsp;n&nbsp;；</td>
+     </tr>
+     <tr>
+          <td>&copy;</td>
+          <td>版权</td>
+          <td>&&nbsp;c&nbsp;o&nbsp;p&nbsp;y&nbsp;；</td>
+     </tr>
+     <tr>
+          <td>&reg;</td>
+          <td>注册商标</td>
+          <td>&&nbsp;r&nbsp;e&nbsp;g&nbsp;；</td>
+     </tr>
+     <tr>
+          <td>&deg;</td>
+          <td>摄氏度</td>
+          <td>&&nbsp;d&nbsp;e&nbsp;g&nbsp;；</td>
+     </tr>
+     <tr>
+          <td>&plusmn;</td>
+          <td>正负号</td>
+          <td>&&nbsp;p&nbsp;l&nbsp;u&nbsp;s&nbsp;m&nbsp;n&nbsp;；</td>
+     </tr>
+     <tr>
+          <td>&times;</td>
+          <td>乘号</td>
+          <td>&&nbsp;t&nbsp;i&nbsp;m&nbsp;e&nbsp;s&nbsp;；</td>
+     </tr>
+     <tr>
+          <td>&divide;</td>
+          <td>除号</td>
+          <td>&&nbsp;d&nbsp;i&nbsp;v&nbsp;i&nbsp;d&nbsp;e&nbsp;；</td>
+     </tr>
+     <tr>
+          <td>&sup2;</td>
+          <td>平方</td>
+          <td>&&nbsp;s&nbsp;u&nbsp;p&nbsp;2&nbsp;；</td>
+     </tr>
+     <tr>
+          <td>&sup3;</td>
+          <td>立方</td>
+          <td>&&nbsp;s&nbsp;u&nbsp;p&nbsp;3&nbsp;；</td>
+     </tr>
+</table>
+<p>仔细观察即可发现这样一套规则中字符对应代码与字符本身还保有密切的关系</p>  
+<!-- firefox翻译过程中即使字符代码没有分号仍能翻译成对应字符 -->
+<!-- 从现在开始Firefox出现迟钝 -->
+</body>
+</html>
